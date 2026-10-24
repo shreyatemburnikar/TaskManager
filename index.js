@@ -12,12 +12,22 @@ function addTask() {
         alert("Please enter a task!");
         return;
     }
-
-    // Step 3: Create a new list item
     const li = document.createElement("li");
     li.textContent = taskName;
 
-    // Step 4: Add the task to the list
+// Create a Delete button
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+
+// Delete the task when the button is clicked
+    deleteBtn.addEventListener("click", function() {
+        li.remove();
+    });
+
+// Add the button to the task
+    li.appendChild(deleteBtn);
+
+// Display the task
     taskList.appendChild(li);
 
     // Step 5: Clear the input box
