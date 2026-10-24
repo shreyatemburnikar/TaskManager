@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskManager Application</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>TaskManager</title>
 </head>
 <body>
+
 <h1>Task Management System</h1>
-<p>Welcome to our TaskManager application!</p>
+<p>Manage your daily tasks efficiently.</p>
+
+<h2>Add New Task</h2>
+
+<input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a new task">
+
+<button id="addTaskBtn">Add Task</button>
 
 <h2>My Tasks</h2>
-<ul>
-    <li>Learn Git and GitHub</li>
-    <li>Build TaskManager using JavaScript</li>
-    <li>Practice Git branching and merging</li>
-</ul>
+<ul id="taskList"></ul>
+
+<script src="index.js"></script>
+
 </body>
 </html>
